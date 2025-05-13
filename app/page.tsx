@@ -3,7 +3,7 @@ import MenuBar from "@/components/MenuBar";
 export default function IndexPage() {
   return (
     <div>
-      <MenuBar />
+      <MenuBar  page={"หน้าแรก"} />
       {/*section 1*/}
       <div>
         <div className="alert alert-warning rounded" role="alert">
@@ -14,7 +14,7 @@ export default function IndexPage() {
         <h1 className="section1-name kanit-semibold">Hey I'm Supaluk</h1>
         <p className="section1-meta-data kanit-light">I'm a student at Rajamangala University of Technology Krungthep <br />
           I am studying in the คณะบริหารธุรกิจ สาขานวัตกรรมระบบสารสนเทศ <br /></p>
-        <img className="section1-profile-picture" src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-1/462000186_4006717626223670_6663328864566298847_n.jpg?stp=c32.0.720.720a_dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Xi9Ra5_CS58Q7kNvwGEkTvq&_nc_oc=AdntixYFtkfWqKFPH7Rgbc4Cich-iC8OECMiUJW1WdVZ6HbhYleZlmPFHZJH15r1K94&_nc_zt=24&_nc_ht=scontent.fbkk14-1.fna&_nc_gid=5Oztw8QqAh_yEAaNg7EAtg&oh=00_AfG-G6XNlyxYEWMjYxvcUxCzgabI3crIqZdq1MnfxjezHw&oe=6819E367" alt="My picture" />
+        <img className="section1-profile-picture rounded-full" src="https://scontent.fbkk6-1.fna.fbcdn.net/v/t39.30808-6/462000186_4006717626223670_6663328864566298847_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GeoGHVzQiqIQ7kNvwECoCHQ&_nc_oc=AdnhekjDWqb02TAlWYVz2_ewT0kIJ3EpAn1oUmK3V1b2FEi1gWA38rLKuqV98fh_oo0&_nc_zt=23&_nc_ht=scontent.fbkk6-1.fna&_nc_gid=ibTgYqwrCPLkddOiMpvKwQ&oh=00_AfL4PNBh_YtnFCrkCBCPhsvWX9WbPbY1XwU3LepPsrRysA&oe=68289F65" alt="My picture" />
         <p className="section1-description kanit-light">I am a student who is interested in programming and web development.
           <br /></p>
       </div>
