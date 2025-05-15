@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import MenuBar from "@/components/MenuBar";
+import MovieCard from "@/components/MovieCard";
 import axios from "axios";
 import { use, useEffect, useState } from "react";
 
@@ -23,16 +24,32 @@ export default function useEffectPage() {
   return (
     <div>
       <MenuBar page={"เรียนรู้ useEffect"} />
-      <div className="p-4 bg-blue-500 ">
-        <img
-          src={
-            "https://api.themoviedb.org/3/trending/all/week?api_key=229a6a0f891df5bf1176a4668af885c6"
-          }
-          alt="หนังดี"
-        />
-        <h2>หนังดี</h2>
+      <div className="justify-items-center p-4">
+      {movieList.map(
+        (
+          item: {
+            poster_path?: string;
+            title?: string;
+            name?: string;
+            overview?: string;
+
+        },
+      index) => (
+        <div className="bg-pink-50 w-xl">
+          <div className="justify-items-center">
+            <MovieCard src={item.poster_path} />
+            <div className="text-center">
+              <h1>{item.title}</h1>
+              <h1>{item.name}</h1>
+              <h1>{item.overview}</h1>
+            </div>
+          </div>
+        </div>
+      )
+       
+        )}
       </div>
-      {movieList}
+      
       <Footer />
     </div>
   );
